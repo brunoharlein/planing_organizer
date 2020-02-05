@@ -10,7 +10,7 @@ class Connection():
     # Dans ce cas, pas de nom d'hôte et de mot de passe en raison de ma propre configuration
     USER = "brunoharlein"
     PORT = "5432"
-    DATABASE = "organizer"
+    DATABASE = "planning"
 
     def __init__(self):
         # The class stores an instance of pyscopg2 connection and cursor classes
