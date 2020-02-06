@@ -14,10 +14,10 @@ class conferenceModel():
     def get_conferences(self):
         # the query to execute
         # la requête à exécuter
-        sql ="""select * from conference as c
-                inner join speaker as s
-                on s.id = c.speaker_id
-                order by c.event_date, c.event_time"""
+        sql ="""SELECT * FROM conference AS c
+                INNER JOIN speaker as s
+                ON s.id = c.speaker_id
+                ORDER BY c.event_date, c.event_time"""
         conferences = self.db.make_request(sql)
         # turn the list of lists returned by the database into a list of objects
         # transformer la liste des listes renvoyées par la base de données en une liste d'objets
@@ -39,16 +39,16 @@ class conferenceModel():
 
     def add_conference(self, conference):
         # the query to execute
-        sql = """insert into conference(title, summary, event_date, registering_date, event_time, speaker_id)
-                 values(%s, %s, %s, now(), %s, %s)"""
+        sql = """INSERT INTO conference(title, summary, event_date, registering_date, event_time, speaker_id)
+                 VALUES(%s, %s, %s, now(), %s, %s)"""
         arguments = (conference.title, conference.summary, conference.event_date, conference.event_time, conference.speaker)
         message=  "Nous n'avons pas pu enregistrer la conférence, un problème est survenu"
         return self.db.make_request(sql, arguments=arguments, message=message)
 
     def delete_conference(self, id):
         # the query to execute
-        sql = """delete from conference
-                 where id = %s"""
+        sql = """DELETE FROM conference
+                 WHERE id = %s"""
         arguments = (id,)
         message = "Un problème est survenu, nous n'arrivons pas à supprimer la conférence d'id {}".format(id)
         return self.db.make_request(sql, arguments=arguments, message=message)
