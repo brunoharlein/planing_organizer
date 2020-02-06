@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea4eda93-d1a3-4d0b-894e-8a20bb61ff53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/speakerView.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/speakerView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/conferenceModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conferenceModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/speakerModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/speakerModel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

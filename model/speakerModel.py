@@ -1,4 +1,4 @@
-from .connection import connection
+from .connection import Connection
 from .entities.speaker import Speaker
 
 class speakerModel():
@@ -8,7 +8,7 @@ class speakerModel():
     def __init__(self):
         # Create a instance of the connection class to acces the database
         # Creation d'une instance de la class connection pour acceder à la BDD
-        self.db = connection()
+        self.db = Connection()
 
     def get_speakers(self):
         # the query to execute

@@ -1,4 +1,4 @@
-from .connection import connection
+from .connection import Connection
 from .entities.conference import Conference
 from .entities.speaker import Speaker
 
@@ -9,7 +9,7 @@ class conferenceModel():
     def __init__(self):
         # Create a instance of the connection class to acces the database
         # Créer une instance de la classe de connexion pour accéder à la base de données
-        self.db = connection()
+        self.db = Connection()
 
     def get_conferences(self):
         # the query to execute

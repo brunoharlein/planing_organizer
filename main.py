@@ -27,7 +27,7 @@ def speaker_actions():
             view.new_speaker()
         elif action == "s":
             view.delete_speaker()
-        time.sleep(2)
+        time.sleep(1)
 
 def conference_actions():
     """Show the different actions relate to conference entity
@@ -49,7 +49,7 @@ def conference_actions():
             view.new_conference()
         elif action == "s":
             view.delete_conference()
-        time.sleep(2)
+        time.sleep(1)
 
 # Simple intro for the app
 # Introduction pour l'application
