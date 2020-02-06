@@ -1,26 +1,31 @@
-# coding: utf-8
 from .connection import connection
 from .entities.conference import Conference
 from .entities.speaker import Speaker
 
 class conferenceModel():
-    """Class to perform all queries related to the conference table in the database"""
+    """Class to perform all queries related to the conference table in the database
+        Classe pour effectuer toutes les requêtes liées à la table de conférence dans la base de données"""
 
     def __init__(self):
         # Create a instance of the connection class to acces the database
+        # Créer une instance de la classe de connexion pour accéder à la base de données
         self.db = connection()
 
     def get_conferences(self):
         # the query to execute
+        # la requête à exécuter
         sql ="""select * from conference as c
                 inner join speaker as s
                 on s.id = c.speaker_id
                 order by c.event_date, c.event_time"""
         conferences = self.db.make_request(sql)
         # turn the list of lists returned by the database into a list of objects
+        # transformer la liste des listes renvoyées par la base de données en une liste d'objets
         # For each list representing a speaker and a conference
+        # Pour chaque liste représentant un orateur et une conférence
         for key, value in enumerate(conferences):
             # instanciate a speaker and a conference
+            # instancier un conférencier et une conférence
             speaker = Speaker(value)
             conference = Conference(value)
             # Set the right id, otherwise the conference takes the speaker id
