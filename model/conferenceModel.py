@@ -29,11 +29,15 @@ class conferenceModel():
             speaker = Speaker(value)
             conference = Conference(value)
             # Set the right id, otherwise the conference takes the speaker id
+            # Définissez le bon id, sinon la conférence prend l'id du speaker
             # NB: this is an ugly solution but it avoids complicating the correction too much
+            # NB: c'est une solution moche mais ça évite de trop compliquer la correction
             conference.id = value[0]
             # set the speaker object in the conference object
+            # définir l'objet speaker dans l'objet conférence
             conference.speaker = speaker
             # replace the list by the object in the list of conferences
+            # remplacer la liste par l'objet dans la liste des conférences
             conferences[key] = conference
         return conferences
 
@@ -42,7 +46,7 @@ class conferenceModel():
         sql = """INSERT INTO conference(title, summary, event_date, registering_date, event_time, speaker_id)
                  VALUES(%s, %s, %s, now(), %s, %s)"""
         arguments = (conference.title, conference.summary, conference.event_date, conference.event_time, conference.speaker)
-        message=  "Nous n'avons pas pu enregistrer la conférence, un problème est survenu"
+        message = "Nous n'avons pas pu enregistrer la conférence, un problème est survenu"
         return self.db.make_request(sql, arguments=arguments, message=message)
 
     def delete_conference(self, id):
