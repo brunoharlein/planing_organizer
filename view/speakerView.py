@@ -37,8 +37,10 @@ class speakerView():
         data["job"] = input("Profession : ")
         data["description"] = input("Présentation : ")
         # instanciate a speaker with the info
+        # instancier un speaker avec l'info
         speaker = Speaker(data)
         # if the registering is succesfull print a success message
+        # si l'enregistrement est réussi, imprimer un message de réussite
         if speakerView.model.add_speaker(speaker):
             print("Le nouvel intervenant a bien été enregistré")
 
