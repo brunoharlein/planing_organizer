@@ -1,5 +1,3 @@
-# coding: utf-8
-
 from model.conferenceModel import conferenceModel
 from model.entities.conference import Conference
 
