@@ -2,7 +2,7 @@ class Entity():
     """Class representing the mother entity class
         Classe représentant la classe d'entité mère"""
 
-    def __init__(self, data = False):
+    def __init__(self, data=False):
         # every entity must have an ID
         # chaque entité doit avoir un ID
         self.id = None

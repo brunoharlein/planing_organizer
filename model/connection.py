@@ -32,7 +32,7 @@ class Connection():
     def close_connection(self):
         """Close both connection and cursor
             Fermer la connexion et le curseur"""
-        if(self.connection):
+        if self.connection():
             self.cursor.close()
             self.connection.close()
 

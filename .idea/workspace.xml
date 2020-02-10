@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea4eda93-d1a3-4d0b-894e-8a20bb61ff53" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/conferenceModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conferenceModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/entities/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/entity.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,5 +45,13 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580907832859" />
+    <state x="428" y="247" key="DBNavigator.DatasetFilterDialog" timestamp="1580997111777">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="428" y="247" key="DBNavigator.DatasetFilterDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580997111777" />
+    <state x="378" y="187" key="DBNavigator.ProjectSettingsDialog" timestamp="1580996982063">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="378" y="187" key="DBNavigator.ProjectSettingsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580996982063" />
   </component>
 </project>

@@ -15,7 +15,7 @@ class conferenceModel():
         # the query to execute
         # la requête à exécuter
         sql ="""SELECT * FROM conference AS c
-                INNER JOIN speaker as s
+                INNER JOIN speaker AS s
                 ON s.id = c.speaker_id
                 ORDER BY c.event_date, c.event_time"""
         conferences = self.db.make_request(sql)
